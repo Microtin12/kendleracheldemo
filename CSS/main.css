@@ -96,12 +96,12 @@ p{
 img{
     display: block;
     max-width: 100%;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .img_wrap {
     position: relative;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: var(--clr-primary-400);
     width:70vw;
     margin-left: auto;
@@ -179,9 +179,47 @@ section {
     header,
     section{
         padding: 2rem 0;
+        padding-bottom: 0;
     }
 }
 
+.forumsubmit{
+    background-color: var(--clr-primary-600);
+    height: 50vh;
+    width: 100%;
+    padding: 4em;
+}
+.holder{
+    display: flex;
+    flex-direction: row;
+}
+.input{
+    padding: 1em;
+    width: 100%;
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-700);
+}
+.subject{
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-700);
+    padding: 1em;
+    max-width: 100%;
+    min-width: 100%;
+}
+.submit {
+    width: 100%;
+    padding: 1em;
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-700);
+}
+
+.border{
+    border-style: solid;
+    border-width: 1px;
+    margin: 1%;
+    border-color: var(--clr-primary-700);
+    background-color: var(--clr-primary-400);
+}
 .container{
     margin-inline: auto;
     width: min(90%, 70.5rem);
@@ -198,3 +236,4 @@ section {
     color:var(--clr-primary-400);
     background-color: var(--clr-neutral-900);
 }
+
