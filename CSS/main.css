@@ -189,6 +189,16 @@ section {
     width: 100%;
     padding: 4em;
 }
+@media (min-width: 40em){
+    .forumsubmit{
+        padding-inline: 2em;
+        width: 100%;
+    }
+    .formwrap{
+        width: 75%;
+        padding-left: 25%;
+    }
+}
 .holder{
     display: flex;
     flex-direction: row;
