@@ -56,6 +56,13 @@ h2{
     color: var(--clr-primary-400);
     margin: 0;
 }
+h5{
+    font-family:var(--ff-accent1);
+    color: var(--clr-primary-400);
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
 .outer{
     position: relative;
 }
@@ -261,12 +268,12 @@ header{
 
 .bg-dark{
     color:var(--clr-primary-400);
-    height: 45vh;
+    height: auto;
     overflow: hidden;
     position: relative;
 }
 .footerouter{
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
 }
@@ -274,17 +281,54 @@ header{
     position: absolute;
     z-index: -1;
     right: 0;
-    width: 25%;
+    width: 0;
     height: 100%;
     background-color: var(--clr-neutral-900);
 }
+
+.split_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    padding-bottom: 1rem;
+}
+
 .divspace{
     padding-top: 2rem;
 }
 .footerspacertwo{
     position: absolute;
     z-index: -1;
-    width: 25%;
+    width: 0;
     height: 100%;
     background-color: var(--clr-neutral-900);
+    
+}
+
+
+
+@media (min-width: 40em) {
+    .split_footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .footerspacer{
+    width: 35%;
+    }
+    .footerspacertwo{  
+    width: 35%;
+    }
+    .split_footer > * {
+        flex-basis: 100%;
+    }
+
+    .split_footer > * + * {
+        margin-left: 8vw;
+    }
+    .bg-dark{
+        height: 47vh;
+    }
+
 }
