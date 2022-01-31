@@ -1,4 +1,4 @@
-# kendleracheldemo
+# Kendle and Rachel
 This is a wedding registry website that I have created for my wedding coming up in a few months
 To create this website, I have been teaching myself how to code and here it is. 
 Its very rough and needs a lot of work to make the code easier to read but it works and Im proud of it.
